@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C40AE5152BB429F0000E9883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5142BB429F0000E9883 /* AppDelegate.swift */; };
 		C40AE5172BB429F0000E9883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5162BB429F0000E9883 /* SceneDelegate.swift */; };
-		C40AE5192BB429F0000E9883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5182BB429F0000E9883 /* ViewController.swift */; };
 		C40AE51C2BB429F0000E9883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AE51A2BB429F0000E9883 /* Main.storyboard */; };
 		C40AE51E2BB429F5000E9883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40AE51D2BB429F5000E9883 /* Assets.xcassets */; };
 		C40AE5212BB429F5000E9883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AE51F2BB429F5000E9883 /* LaunchScreen.storyboard */; };
 		C40AE52C2BB429F6000E9883 /* MyplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE52B2BB429F6000E9883 /* MyplaceTests.swift */; };
 		C40AE5362BB429F6000E9883 /* MyplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5352BB429F6000E9883 /* MyplaceUITests.swift */; };
 		C40AE5382BB429F6000E9883 /* MyplaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5372BB429F6000E9883 /* MyplaceUITestsLaunchTests.swift */; };
+		C40AE5462BB42CCD000E9883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5182BB429F0000E9883 /* ViewController.swift */; };
+		C40AE5482BB42D48000E9883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AE5472BB42D48000E9883 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C40AE5312BB429F6000E9883 /* MyplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyplaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40AE5352BB429F6000E9883 /* MyplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplaceUITests.swift; sourceTree = "<group>"; };
 		C40AE5372BB429F6000E9883 /* MyplaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C40AE5472BB42D48000E9883 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				C40AE5132BB429F0000E9883 /* Myplace */,
-				C40AE52A2BB429F6000E9883 /* MyplaceTests */,
-				C40AE5342BB429F6000E9883 /* MyplaceUITests */,
 				C40AE5122BB429EF000E9883 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,12 +99,10 @@
 		C40AE5132BB429F0000E9883 /* Myplace */ = {
 			isa = PBXGroup;
 			children = (
-				C40AE5142BB429F0000E9883 /* AppDelegate.swift */,
-				C40AE5162BB429F0000E9883 /* SceneDelegate.swift */,
-				C40AE5182BB429F0000E9883 /* ViewController.swift */,
+				C40AE5442BB42C71000E9883 /* now hidden */,
+				C40AE5472BB42D48000E9883 /* MainViewController.swift */,
 				C40AE51A2BB429F0000E9883 /* Main.storyboard */,
 				C40AE51D2BB429F5000E9883 /* Assets.xcassets */,
-				C40AE51F2BB429F5000E9883 /* LaunchScreen.storyboard */,
 				C40AE5222BB429F5000E9883 /* Info.plist */,
 			);
 			path = Myplace;
@@ -125,6 +123,19 @@
 				C40AE5372BB429F6000E9883 /* MyplaceUITestsLaunchTests.swift */,
 			);
 			path = MyplaceUITests;
+			sourceTree = "<group>";
+		};
+		C40AE5442BB42C71000E9883 /* now hidden */ = {
+			isa = PBXGroup;
+			children = (
+				C40AE5182BB429F0000E9883 /* ViewController.swift */,
+				C40AE51F2BB429F5000E9883 /* LaunchScreen.storyboard */,
+				C40AE5162BB429F0000E9883 /* SceneDelegate.swift */,
+				C40AE5142BB429F0000E9883 /* AppDelegate.swift */,
+				C40AE52A2BB429F6000E9883 /* MyplaceTests */,
+				C40AE5342BB429F6000E9883 /* MyplaceUITests */,
+			);
+			path = "now hidden";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +218,7 @@
 				};
 			};
 			buildConfigurationList = C40AE50C2BB429EF000E9883 /* Build configuration list for PBXProject "Myplace" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,9 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40AE5192BB429F0000E9883 /* ViewController.swift in Sources */,
+				C40AE5462BB42CCD000E9883 /* ViewController.swift in Sources */,
 				C40AE5152BB429F0000E9883 /* AppDelegate.swift in Sources */,
 				C40AE5172BB429F0000E9883 /* SceneDelegate.swift in Sources */,
+				C40AE5482BB42D48000E9883 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Yaroslav.Myplace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yaroslav.MyPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -485,7 +497,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Yaroslav.Myplace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yaroslav.MyPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
